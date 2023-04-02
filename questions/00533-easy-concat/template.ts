@@ -1,1 +1,1 @@
-type Concat<T, U> = any
+type Concat<T extends Array<any>, U extends Array<any>> = [...T, ...U]
