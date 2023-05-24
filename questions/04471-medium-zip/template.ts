@@ -1,1 +1,1 @@
-type Zip<T, U> = any
+type Zip<T, U> = any;

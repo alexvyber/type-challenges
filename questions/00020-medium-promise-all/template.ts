@@ -27,5 +27,5 @@
 declare function PromiseAll<T extends Array<any>>(
   values: readonly [...T]
 ): Promise<{
-  [K in keyof T]: Awaited<T[K]>
-}>
+  [K in keyof T]: Awaited<T[K]>;
+}>;

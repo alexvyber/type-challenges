@@ -1,1 +1,1 @@
-type FindEles<T extends any[]> = any
+type FindEles<T extends any[]> = any;

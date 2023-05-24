@@ -1,1 +1,1 @@
-type ConstructTuple<L extends number> = any
+type ConstructTuple<L extends number> = any;

@@ -1,1 +1,1 @@
-type CheckRepeatedChars<T extends string> = any
+type CheckRepeatedChars<T extends string> = any;

@@ -1,1 +1,1 @@
-type MapTypes<T, R> = any
+type MapTypes<T, R> = any;
