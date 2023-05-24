@@ -1,5 +1,5 @@
-type ReplaceKeys<Source, Keys extends keyof Replacement, Replacement> = {
-  [Prop in keyof Source]: Prop extends Keys & keyof Replacement
+type ReplaceKeys<Source, Keys, Replacement> = {
+  [Prop in keyof Source]: Prop extends Keys 
     ? Prop extends keyof Replacement
       ? Replacement[Prop]
       : never
@@ -8,8 +8,8 @@ type ReplaceKeys<Source, Keys extends keyof Replacement, Replacement> = {
 
 // type ReplaceKeys<Source, Keys extends keyof Replacement, Replacement> = {
 //   [Prop in keyof Source]: Prop extends Keys & keyof Replacement
-//     // ? Prop extends keyof Replacement
+//     ? Prop extends keyof Replacement
 //       ? Replacement[Prop]
-//       // : never
+//       : never
 //     : Source[Prop];
 // }
