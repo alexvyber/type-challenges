@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
+    "@biomejs/biome": "1.2.2",
     "@type-challenges/utils": "workspace:*",
     "@types/fs-extra": "^9.0.13",
     "@types/js-yaml": "^4.0.5",

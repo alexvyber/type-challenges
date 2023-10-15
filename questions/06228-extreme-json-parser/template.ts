@@ -3,7 +3,7 @@ type Pure<T> = {
 }
 
 type SetProperty<T, K extends PropertyKey, V> = {
-  [P in (keyof T) | K]: P extends K ? V : P extends keyof T ? T[P] : never
+  [P in keyof T | K]: P extends K ? V : P extends keyof T ? T[P] : never
 }
 
 type Token = any

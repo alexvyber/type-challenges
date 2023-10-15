@@ -20,5 +20,5 @@ type Merge<Left, Right> = {
     ? Right[Prop]
     : Prop extends keyof Left
     ? Left[Prop]
-    : never;
-};
+    : never
+}

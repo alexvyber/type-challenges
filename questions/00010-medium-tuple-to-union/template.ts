@@ -1,1 +1,1 @@
-type TupleToUnion<T extends Array<any>> = T[number];
+type TupleToUnion<T extends Array<any>> = T[number]

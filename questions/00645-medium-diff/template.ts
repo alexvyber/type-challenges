@@ -2,7 +2,7 @@ type Propertize<Prop, First, Second> = Prop extends keyof First
   ? Prop extends keyof Second
     ? never
     : Prop
-  : Prop;
+  : Prop
 
 // type Diff<First, Second> = {
 //   [Prop in keyof First | keyof Second as Propertize<
@@ -31,11 +31,11 @@ type Propertize<Prop, First, Second> = Prop extends keyof First
 type Diff<One, Two> = Omit<One & Two, keyof One & keyof Two>
 
 type Foo = {
-  name: string;
-  age: string;
-};
+  name: string
+  age: string
+}
 type Bar = {
-  name: string;
-  age: string;
-  gender: number;
-};
+  name: string
+  age: string
+  gender: number
+}

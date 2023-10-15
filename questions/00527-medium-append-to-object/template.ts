@@ -1,16 +1,14 @@
-type AppendToObject<
-  Obj extends object,
-  Prop extends PropertyKey,
-  Value
-> = Prettify<Obj & { [key in Prop]: Value }>;
+type AppendToObject<Obj extends object, Prop extends PropertyKey, Value> = Prettify<
+  Obj & { [key in Prop]: Value }
+>
 
 type Prettify<T> = {
-  [K in keyof T]: T[K];
-} & {};
+  [K in keyof T]: T[K]
+} & {}
 
 type test1 = {
-  key: "cat";
-  value: "green";
-};
+  key: "cat"
+  value: "green"
+}
 
-type Some = AppendToObject<test1, "home", boolean>;
+type Some = AppendToObject<test1, "home", boolean>

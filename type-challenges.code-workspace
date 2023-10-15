@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "type-challenges",
+			"path": "."
+		}
+	],
+	"settings": {
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/bower_components": true,
+			"**/*.code-search": true,
+			"pnpm-lock.yaml": true,
+			"**/dist": true
+		},
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"typescript.format.semicolons": "remove",
+		"javascript.format.semicolons": "remove"
+	}
+}

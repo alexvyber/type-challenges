@@ -1,5 +1,5 @@
 type StringToUnion<T extends string> = T extends `${infer Head}${infer Tail}`
   ? Head | StringToUnion<Tail>
-  : never;
+  : never
 
-type SomeRes = StringToUnion<"hello">;
+type SomeRes = StringToUnion<"hello">
