@@ -1,4 +1,4 @@
-import type { Debug, Equal, Expect, IsAny } from '@type-challenges/utils'
+import type { Debug, Equal, Expect, IsAny } from "@type-challenges/utils"
 
 class ClassA {}
 
@@ -14,12 +14,12 @@ VueBasicProps({
   data(this) {
     type PropsType = Debug<typeof this>
     type cases = [
-      Expect<IsAny<PropsType['propA']>>,
-      Expect<Equal<PropsType['propB'], string>>,
-      Expect<Equal<PropsType['propC'], boolean>>,
-      Expect<Equal<PropsType['propD'], ClassA>>,
-      Expect<Equal<PropsType['propE'], string | number>>,
-      Expect<Equal<PropsType['propF'], RegExp>>,
+      Expect<IsAny<PropsType["propA"]>>,
+      Expect<Equal<PropsType["propB"], string>>,
+      Expect<Equal<PropsType["propC"], boolean>>,
+      Expect<Equal<PropsType["propD"], ClassA>>,
+      Expect<Equal<PropsType["propE"], string | number>>,
+      Expect<Equal<PropsType["propF"], RegExp>>
     ]
 
     // @ts-expect-error
@@ -30,8 +30,8 @@ VueBasicProps({
     this.data()
 
     return {
-      firstname: 'Type',
-      lastname: 'Challenges',
+      firstname: "Type",
+      lastname: "Challenges",
       amount: 10,
     }
   },
@@ -53,7 +53,7 @@ VueBasicProps({
       const propE = this.propE
       type cases = [
         Expect<Equal<typeof fullname, string>>,
-        Expect<Equal<typeof propE, string | number>>,
+        Expect<Equal<typeof propE, string | number>>
       ]
     },
   },

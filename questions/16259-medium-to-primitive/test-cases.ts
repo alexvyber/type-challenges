@@ -1,15 +1,15 @@
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from "@type-challenges/utils"
 
 type PersonInfo = {
-  name: 'Tom'
+  name: "Tom"
   age: 30
   married: false
   addr: {
-    home: '123456'
-    phone: '13111111111'
+    home: "123456"
+    phone: "13111111111"
   }
-  hobbies: ['sing', 'dance']
-  readonlyArr: readonly ['test']
+  hobbies: ["sing", "dance"]
+  readonlyArr: readonly ["test"]
   fn: () => any
 }
 
@@ -26,6 +26,4 @@ type ExpectedResult = {
   fn: Function
 }
 
-type cases = [
-  Expect<Equal<ToPrimitive<PersonInfo>, ExpectedResult>>,
-]
+type cases = [Expect<Equal<ToPrimitive<PersonInfo>, ExpectedResult>>]
