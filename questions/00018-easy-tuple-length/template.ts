@@ -1,4 +1,4 @@
-type Length<T extends readonly unknown[]> = T["length"]
+type Length<T extends readonly unknown[]> = T["length"];
 
 // const tuple = [1, 2, 3, 4] as const
 

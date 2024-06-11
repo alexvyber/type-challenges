@@ -1,1 +1,1 @@
-type ToPrimitive = any
+type ToPrimitive = any;

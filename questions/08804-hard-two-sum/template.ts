@@ -1,1 +1,1 @@
-type TwoSum<T extends number[], U extends number> = any
+type TwoSum<T extends number[], U extends number> = any;

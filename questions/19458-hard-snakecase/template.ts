@@ -1,1 +1,1 @@
-type SnakeCase<T> = any
+type SnakeCase<T> = any;

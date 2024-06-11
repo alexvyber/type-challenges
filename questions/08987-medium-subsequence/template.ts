@@ -1,1 +1,1 @@
-type Subsequence<T extends any[]> = any
+type Subsequence<T extends any[]> = any;

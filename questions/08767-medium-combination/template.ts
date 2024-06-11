@@ -1,1 +1,1 @@
-type Combination<T extends string[]> = any
+type Combination<T extends string[]> = any;

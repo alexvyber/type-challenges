@@ -1,1 +1,1 @@
-type ValidDate<T extends string> = any
+type ValidDate<T extends string> = any;

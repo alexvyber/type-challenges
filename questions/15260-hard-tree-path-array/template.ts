@@ -1,1 +1,1 @@
-type Path<T> = any
+type Path<T> = any;

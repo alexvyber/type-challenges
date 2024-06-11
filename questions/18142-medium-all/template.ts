@@ -1,1 +1,1 @@
-type All = any
+type All = any;

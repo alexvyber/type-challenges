@@ -1,1 +1,1 @@
-type FizzBuzz<N extends number> = any
+type FizzBuzz<N extends number> = any;

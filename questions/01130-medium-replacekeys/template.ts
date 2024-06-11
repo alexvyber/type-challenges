@@ -1,10 +1,10 @@
 type ReplaceKeys<Source, Keys, Replacement> = {
-  [Prop in keyof Source]: Prop extends Keys
-    ? Prop extends keyof Replacement
-      ? Replacement[Prop]
-      : never
-    : Source[Prop]
-}
+	[Prop in keyof Source]: Prop extends Keys
+		? Prop extends keyof Replacement
+			? Replacement[Prop]
+			: never
+		: Source[Prop];
+};
 
 // type ReplaceKeys<Source, Keys extends keyof Replacement, Replacement> = {
 //   [Prop in keyof Source]: Prop extends Keys & keyof Replacement

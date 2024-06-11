@@ -1,2 +1,2 @@
 // M => minuend, S => subtrahend
-type Subtract<M extends number, S extends number> = any
+type Subtract<M extends number, S extends number> = any;

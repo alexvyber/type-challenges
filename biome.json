@@ -16,16 +16,16 @@
 		"indentSize": 2,
 		"lineWidth": 100,
 		"ignore": []
-	  },
-	  "javascript": {
+	},
+	"javascript": {
 		"formatter": {
-		  "semicolons": "asNeeded",
-		  "enabled": true,
-		  "indentSize": 2,
-		  "indentStyle": "space",
-		  "quoteStyle": "double",
-		  "trailingComma": "es5",
-		  "lineWidth": 100
+			"semicolons": "asNeeded",
+			"enabled": true,
+			"indentSize": 2,
+			"indentStyle": "space",
+			"quoteStyle": "double",
+			"trailingComma": "es5",
+			"lineWidth": 100
 		}
-	  }
+	}
 }

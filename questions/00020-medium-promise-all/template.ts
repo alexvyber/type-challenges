@@ -24,6 +24,8 @@
 // const other: Other = "1"
 
 // !!!!!!!!!!!!!!!!!!!!!
-declare function PromiseAll<T extends Array<any>>(values: readonly [...T]): Promise<{
-  [K in keyof T]: Awaited<T[K]>
-}>
+declare function PromiseAll<T extends Array<any>>(
+	values: readonly [...T],
+): Promise<{
+	[K in keyof T]: Awaited<T[K]>;
+}>;

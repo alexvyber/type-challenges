@@ -1,1 +1,1 @@
-type CapitalizeNestObjectKeys<T> = any
+type CapitalizeNestObjectKeys<T> = any;

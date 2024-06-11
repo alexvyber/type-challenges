@@ -3,8 +3,11 @@
 //   }[keyof T]
 
 type ObjectEntries<T> = {
-  [P in keyof Required<T>]: [P, Required<T>[P] extends never ? undefined : Required<T>[P]]
-}[keyof T]
+	[P in keyof Required<T>]: [
+		P,
+		Required<T>[P] extends never ? undefined : Required<T>[P],
+	];
+}[keyof T];
 
 // Op<Required<T>>
 // type Op<T> = {

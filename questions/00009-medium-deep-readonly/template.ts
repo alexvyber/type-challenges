@@ -1,10 +1,10 @@
 type DeepReadonly<T extends object> = {
-  readonly [K in keyof T]: T[K] extends (...args: any[]) => any
-    ? T[K]
-    : T[K] extends Record<PropertyKey, any>
-    ? DeepReadonly<T[K]>
-    : T[K]
-}
+	readonly [K in keyof T]: T[K] extends (...args: any[]) => any
+		? T[K]
+		: T[K] extends Record<PropertyKey, any>
+		  ? DeepReadonly<T[K]>
+		  : T[K];
+};
 
 /*
 
@@ -71,12 +71,12 @@ type DeepReadonly<T extends object> = {
 
 // type a = DeepReadonly<X1>
 
-type Func = () => 22
+type Func = () => 22;
 
-type isObj1<T> = T extends object ? true : false
-type isObj2<T> = T extends {} ? true : false
-type isObj3<T> = T extends Record<string, any> ? true : false
+type isObj1<T> = T extends object ? true : false;
+type isObj2<T> = T extends {} ? true : false;
+type isObj3<T> = T extends Record<string, any> ? true : false;
 
-type R1 = isObj1<Func>
-type R2 = isObj2<Func>
-type R3 = isObj3<Func>
+type R1 = isObj1<Func>;
+type R2 = isObj2<Func>;
+type R3 = isObj3<Func>;

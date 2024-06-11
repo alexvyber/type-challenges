@@ -1,1 +1,1 @@
-type NumberRange<L, H> = any
+type NumberRange<L, H> = any;

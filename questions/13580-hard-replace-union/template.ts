@@ -1,1 +1,1 @@
-type UnionReplace<T, U extends [any, any][]> = any
+type UnionReplace<T, U extends [any, any][]> = any;

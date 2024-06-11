@@ -1,1 +1,1 @@
-type BinaryToDecimal<S extends string> = any
+type BinaryToDecimal<S extends string> = any;

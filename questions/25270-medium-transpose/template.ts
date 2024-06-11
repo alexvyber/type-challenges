@@ -1,1 +1,1 @@
-type Transpose<M extends number[][]> = any
+type Transpose<M extends number[][]> = any;

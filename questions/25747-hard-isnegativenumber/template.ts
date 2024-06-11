@@ -1,1 +1,1 @@
-type IsNegativeNumber<T extends number> = any
+type IsNegativeNumber<T extends number> = any;

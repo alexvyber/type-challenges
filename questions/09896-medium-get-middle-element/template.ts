@@ -1,1 +1,1 @@
-type GetMiddleElement<T> = any
+type GetMiddleElement<T> = any;
