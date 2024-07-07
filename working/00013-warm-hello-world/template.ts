@@ -1,1 +1,1 @@
-type HelloWorld = string
+type HelloWorld = string;
